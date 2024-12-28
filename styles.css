@@ -1,0 +1,273 @@
+/* to reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url("https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* added height to make the layout more balanced when the viewport is tall */
+    flex-direction: column;
+}
+
+/* survey-top section */
+.survey-top {
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* main-wrapper for the form */
+.main-wrapper {
+    background-color: #948486;
+    width: 100%;
+    max-width: 600px;
+    display: flex; /* using flex to align items */
+    flex-direction: column; /* added for stacking children elements */
+    align-items: center; /* added for centering children  elements */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* form styling */
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+/* input-group styling */
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+.select-dropdown,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* select-dropdown styling */
+.select-dropdown {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* checkbox-group styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+legend {
+    margin: 15px 0;
+}
+
+/* textarea styling */
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* to reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url("https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* added height to make the layout more balanced when the viewport is tall */
+    flex-direction: column;
+}
+
+/* survey-top section */
+.survey-top {
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* main-wrapper for the form */
+.main-wrapper {
+    background-color: #948486;
+    width: 100%;
+    max-width: 600px;
+    display: flex; /* using flex to align items */
+    flex-direction: column; /* added for stacking children elements */
+    align-items: center; /* added for centering children  elements */
+    margin: 20px auto;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* form styling */
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+/* input-group styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+.select-dropdown,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* select-dropdown styling */
+.select-dropdown {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* checkbox-group styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.checkbox-group input {
+    margin-right: 10px; /* to add some space between input and label */
+}
+
+legend {
+    margin: 15px 0;
+}
+
+/* textarea styling */
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+label[for="comments"] {
+    display: block;
+    margin-bottom: 10px; /* to add some space between label and textarea */
+}
+
+/* radio button styling */
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* to add space below each radio group */
+    margin-left: 5px; /* to move boxes to the right */
+}
+
+.radio-group label {
+    margin-left: 10px;
+}
+
+/* button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    color: white;
+    border: none;
+    width: 50%;
+    padding: 10px 15px;
+    margin: 15px auto; /* changed margin to auto for centering */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: violet;
+    transition: background-color 0.2s ease;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: darkblue;
+}
+
+/* accesibility design */
+input:focus,
+.select-dropdown:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+/* responsive design */
+@media (max-width: 600px) {
+    .main-wrapper {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .survey-top {
+        margin: 15px;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="survey-top">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Let us know how we can improve this form project</p>
+        </div>
+
+        <form id="survey-form" class="survey-form">
+            <fieldset>
+                <div class="input-group">
+                    <label for="name" id="name-label"> &#42; Name</label>
+                    <input id="name" type="text" placeholder="Enter your name:" name="name" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="email" id="email-label"> &#42; E-mail</label>
+                    <input id="email" type="email" placeholder="Enter your e-mail:" name="email" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="number" id="number-label"> &#42; Age </label>
+                    <input id="number" type="number" min="18" max="99" placeholder="Enter your age:" name="number"
+                        required />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown" class="label-dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" name="dropdown" class="select-dropdown" required>
+                    <option value="student">Student</option>
+                    <option value="designer">UX/UI Designer</option>
+                    <option value="front-end">Front-end developer</option>
+                    <option value="back-end">Back-end developer</option>
+                    <option value="full-stack">Full Stack Developer</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which programming languages or frameworks do you know?</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="c" value="c" /><label for="c"> C</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="cpp" value="c++" /><label for="cpp"> C++</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="java" value="java" /><label for="java"> Java</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="javascript" value="javascript" /><label for="js"> JavaScript</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="python" value="python" /><label for="python"> Python</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="angular" value="angular" /><label for="angular"> Angular</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="react" value="react" /><label for="react"> React</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="other" value="other" /><label for="other"> Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="comments">Do you have any comments or suggestions?</label>
+                <textarea id="comments" placeholder="Write something here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Would you recommend our site to a friend?</legend>
+                <div class="radio-group">
+                    <input id="yes" type="radio" name="recommendation" value="yes" checked />
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="radio-group">
+                    <input id="no" type="radio" name="recommendation" value="no" />
+                    <label for="no">No</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="button-container">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
