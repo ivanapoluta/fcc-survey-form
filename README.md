@@ -34,7 +34,6 @@ Build an app that is functionally similar to [Survey Form by freeCodeCamp](https
 
 - HTML5
 - CSS3
-- JavaScript (for form validation and interaction)
 
 ## Installation
 
